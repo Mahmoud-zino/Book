@@ -3,7 +3,7 @@
 os: linux
 dist: xenial
 language: csharp
-solution: PipelineLib.sln
+solution: Book.sln
 mono: none
 dotnet: 5.0.301
 before_scrip:
