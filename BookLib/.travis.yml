@@ -1,0 +1,17 @@
+# Travis CI build pipeline
+# --------------------------------------
+os: linux
+dist: xenial
+language: csharp
+solution: PipelineLib.sln
+mono: none
+dotnet: 5.0.301
+before_scrip:
+  - set -e
+  - dotnet restore
+script:
+  - set -e
+  - dotnet build -c Release
+  - |
+    dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:Exclude="[xunit*]*" /p:excludebyfile="**/*.Designer.cs"
+    bash <(curl -s https://codecov.io/bash) -Z

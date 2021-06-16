@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>ElZino</RootNamespace>
+    <AssemblyName>ElZino.Models.$(MSBuildProjectName)</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymboles>true</IncludeSymboles>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <Title>$(MSBuildProjectName)</Title>
+    <Authors>M.Zino</Authors>
+    <Company>ElZino</Company>
+    <Copyright>(c) 2021 ElZino</Copyright>
+    <PackageProjectUrl>https://github.com/Mahmoud-zino/Book</PackageProjectUrl>
+    <PackageTags>Book, Author, ElZino</PackageTags>
+    <Version>1.0.0</Version>
+    <Description>Models for a book and its author</Description>
+    <PackageId>Elzino.Model.BookLib</PackageId>
+    <RepositoryUrl>https://github.com/Mahmoud-zino/Book.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+</Project>
